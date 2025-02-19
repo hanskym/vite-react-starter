@@ -27,7 +27,13 @@ export default tseslint.config(
       ...react.configs['jsx-runtime'].rules,
       ...reactHooks.configs.recommended.rules,
       ...prettier.configs.recommended.rules,
-      'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
+      'react-refresh/only-export-components': [
+        'warn',
+        {
+          allowConstantExport: true,
+          allowExportNames: ['meta', 'links', 'headers', 'loader', 'action'],
+        },
+      ],
       'prettier/prettier': [
         'error',
         {
