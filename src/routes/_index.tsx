@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import * as React from 'react';
 
 import reactRouterLogo from '@/assets/react-router.svg';
 import reactLogo from '@/assets/react.svg';
@@ -12,8 +12,8 @@ export function meta() {
   ];
 }
 
-function App() {
-  const [count, setCount] = useState(0);
+export default function Index() {
+  const [count, setCount] = React.useState(0);
 
   return (
     <>
@@ -41,5 +41,3 @@ function App() {
     </>
   );
 }
-
-export default App;

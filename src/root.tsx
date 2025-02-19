@@ -1,5 +1,7 @@
 import { Links, Meta, Outlet, Scripts, ScrollRestoration } from 'react-router';
 
+import '@/styles/globals.css';
+
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
