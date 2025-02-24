@@ -1,50 +1,70 @@
-# React + TypeScript + Vite
+# Vite React Starter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+⚡ A ready-to-use Vite + React starter template, pre-configured with essential tools for quick and efficient development.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🚀 **Vite**: Lightning-fast bundler and dev server
+- ⚛️ **React** 19
+- 🔀 **React Router v7 Framework Mode**: File-based routing, supporting both SPA and SSR
+- 🟦 **TypeScript**: Adds type safety to the code
+- ✔️ **ESLint**: Configured for code quality checks
+- 💅 **Prettier**: Code formatting and [sorting imports](https://github.com/IanVS/prettier-plugin-sort-imports)
+- ✂️ **Knip**: Detects unused files, dependencies, and exports
+- 🧩 **Zod**: Type-safe schema validation
+- 🐶 **Husky**: Manages Git hooks that run automatically during commits and pushes
+- 🔄 **Lint Staged**: Automatically run code formatting and linters on pre-committed files
+- 📝 **Commitlint**: Enforces [conventional commit messages](https://www.conventionalcommits.org/en/v1.0.0/)
+- ✍️ **Commitizen**: Simplifies the process of writing consistent commit messages
+- 🧰 **Vite Plugins**:
+  - `vite-plugin-checker`: TypeScript and ESLint integration
+  - `vite-plugin-pwa`: Progressive Web App support
+  - `vite-tsconfig-paths`: Path alias support
+- 📊 **Bundle Analyzer**: Visualizes bundle size with rollup-plugin-visualizer
+- 📁 **Absolute Import and Path Alias**: Import components using the `@/` prefix
+- 💻 **VSCode**: Includes settings and recommended extensions
 
-## Expanding the ESLint configuration
+## Prerequisites
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Make sure you have the following installed:
 
-- Configure the top-level `parserOptions` property like this:
+- [Node.js](https://nodejs.org) (version 20 or later)
+- [Bun](https://bun.sh)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
+> **Note:** If using npm, Yarn, or pnpm, adjust the package commands accordingly, including Husky commit hooks.
+
+## Getting Started
+
+### 1. Start a New Project
+
+You can start a new project using this repository as a template in three ways:
+
+1. Use This Repository as Template
+
+   ![use-this-template-button](https://i.imgur.com/XO4Wntx.png)
+
+2. Using Git Clone
+
+   ```bash
+   git clone https://github.com/hanskym/vite-react-starter my-project-name
+   ```
+
+### 2. Install Dependencies
+
+```bash
+bun install
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### 3. Prepare Husky
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react';
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-});
+```bash
+bun prepare
 ```
+
+### 4. Run the Development Server
+
+```bash
+bun dev
+```
+
+Open http://localhost:5173 in your browser to view your Vite React application. You can start editing the app by modifying `src/routes/_index.tsx`, and the changes will update in real time.
