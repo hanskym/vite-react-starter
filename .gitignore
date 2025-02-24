@@ -27,3 +27,6 @@ dist-ssr
 # React Router
 /.react-router/
 /build/
+
+# Ignore stats report from rollup-plugin-visualizer
+stats.html
