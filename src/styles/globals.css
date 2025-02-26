@@ -31,9 +31,11 @@ body {
   min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+  }
 }
 
 button {
@@ -57,6 +59,15 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+code {
+  color: #ececec;
+  background-color: #424242;
+  padding: 0.2em 0.4em;
+  border-radius: 6px;
+  font-size: 0.95em;
+  white-space: pre-wrap;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -70,6 +81,11 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+
+  code {
+    color: #0d0d0d;
+    background-color: #ececec;
+  }
 }
 
 #root {
@@ -80,10 +96,23 @@ button:focus-visible {
 }
 
 .logo {
+  width: auto;
   height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    height: 4em;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    height: 3em;
+  }
 }
 
 .logo:hover {
@@ -119,5 +148,5 @@ button:focus-visible {
 }
 
 .read-the-docs {
-  color: #888;
+  color: #6c757d;
 }

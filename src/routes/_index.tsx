@@ -19,13 +19,19 @@ export default function Index() {
     <>
       <div>
         <a href="https://vite.dev" target="_blank" rel="noopener noreferrer">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
+          <img src={viteLogo} className="logo" width="144" height="144" alt="Vite logo" />
         </a>
         <a href="https://react.dev" target="_blank" rel="noopener noreferrer">
-          <img src={reactLogo} className="logo react" alt="React logo" />
+          <img src={reactLogo} className="logo react" width="144" height="144" alt="React logo" />
         </a>
         <a href="https://reactrouter.com" target="_blank" rel="noopener noreferrer">
-          <img src={reactRouterLogo} className="logo react-router" alt="React Router logo" />
+          <img
+            src={reactRouterLogo}
+            className="logo react-router"
+            width="144"
+            height="144"
+            alt="React Router logo"
+          />
         </a>
       </div>
       <h1>Vite + React + React Router</h1>
