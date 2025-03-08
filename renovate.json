@@ -5,9 +5,17 @@
   "schedule": ["before 1am on Monday"],
   "minimumReleaseAge": "2 days",
   "major": {
-    "enabled": false
+    "enabled": true,
+    "separateMajorMinor": true,
+    "separateMultipleMajor": true
   },
   "rangeStrategy": "bump",
   "updatePinnedDependencies": false,
-  "ignoreDeps": ["node"]
+  "ignoreDeps": ["node"],
+  "packageRules": [
+    {
+      "matchPackageNames": ["@types/node"],
+      "allowedVersions": "20.x"
+    }
+  ]
 }
