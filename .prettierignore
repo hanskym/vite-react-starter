@@ -27,3 +27,9 @@ dist-ssr
 # React Router
 /.react-router/
 /build/
+
+# Lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+bun.lock
