@@ -2,7 +2,7 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:recommended", "group:all"],
   "timezone": "Asia/Jakarta",
-  "schedule": ["before 1am on Monday"],
+  "schedule": ["every weekend"],
   "minimumReleaseAge": "2 days",
   "major": {
     "enabled": true,
