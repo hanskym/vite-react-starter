@@ -26,7 +26,7 @@
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router": "^7.6.0",
-    "zod": "^3.24.4"
+    "zod": "^3.25.28"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
@@ -36,8 +36,8 @@
     "@eslint/js": "^9.27.0",
     "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
     "@react-router/dev": "^7.6.0",
-    "@types/node": "^20.17.47",
-    "@types/react": "^19.1.4",
+    "@types/node": "^20.17.50",
+    "@types/react": "^19.1.5",
     "@types/react-dom": "^19.1.5",
     "commitizen": "^4.3.1",
     "eslint": "^9.27.0",
@@ -48,7 +48,7 @@
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.1.0",
     "husky": "^9.1.7",
-    "knip": "^5.56.0",
+    "knip": "^5.57.2",
     "lint-staged": "^16.0.0",
     "prettier": "^3.5.3",
     "rollup-plugin-visualizer": "^5.14.0",
