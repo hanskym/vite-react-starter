@@ -3,6 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "engines": {
+    "node": ">=22.16.x"
+  },
   "scripts": {
     "dev": "react-router dev",
     "build": "react-router typegen && react-router build",
@@ -35,8 +38,9 @@
     "@commitlint/types": "^19.8.1",
     "@eslint/js": "^9.31.0",
     "@ianvs/prettier-plugin-sort-imports": "^4.5.1",
+    "@prettier/plugin-oxc": "^0.0.4",
     "@react-router/dev": "^7.7.0",
-    "@types/node": "^20.19.8",
+    "@types/node": "^22.16.5",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
     "commitizen": "^4.3.1",

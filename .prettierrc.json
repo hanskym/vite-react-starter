@@ -11,9 +11,9 @@
   "tabWidth": 2,
   "trailingComma": "all",
   "useTabs": false,
-  "plugins": ["@ianvs/prettier-plugin-sort-imports"],
+  "plugins": ["@prettier/plugin-oxc", "@ianvs/prettier-plugin-sort-imports"],
   "importOrder": [
-    "^(react/(.*)$)|^(react$)",
+    "^(react$|react-dom$|react-dom/.*|react/jsx-runtime$|react/.*)$",
     "",
     "^(react-(.*)$)",
     "",
@@ -25,7 +25,6 @@
     "^@/types/(.*)$",
     "",
     "^@/components/(.*)$",
-    "^@/components/ui/(.*)$",
     "",
     "^@/config/(.*)$",
     "^@/hooks/(.*)$",
@@ -35,7 +34,7 @@
     "",
     "^@/assets/(.*)$",
     "",
-    "^@/app/(.*)$",
+    "^@/routes/(.*)$",
     "",
     "^[./]"
   ],
