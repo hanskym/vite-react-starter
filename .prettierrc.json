@@ -13,9 +13,9 @@
   "useTabs": false,
   "plugins": ["@prettier/plugin-oxc", "@ianvs/prettier-plugin-sort-imports"],
   "importOrder": [
-    "^(react$|react-dom$|react-dom/.*|react/jsx-runtime$|react/.*)$",
+    "<BUILTIN_MODULES>",
     "",
-    "^(react-(.*)$)",
+    "^(react$|react/.*$|react-dom$|react-dom/.*$)",
     "",
     "^(vite$)",
     "",
