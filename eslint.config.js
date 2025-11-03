@@ -18,13 +18,12 @@ export default defineConfig([
     settings: { react: { version: '19.2' } },
     plugins: {
       react,
-      'react-hooks': reactHooks,
       prettier,
     },
     extends: [
       js.configs.recommended,
       tseslint.configs.recommended,
-      reactHooks.configs['recommended'],
+      reactHooks.configs.flat.recommended,
       reactRefresh.configs.vite,
     ],
     rules: {
