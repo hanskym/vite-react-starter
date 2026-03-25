@@ -14,8 +14,12 @@
   "ignoreDeps": ["node"],
   "packageRules": [
     {
+      "matchPackageNames": ["typescript"],
+      "allowedVersions": "5.x"
+    },
+    {
       "matchPackageNames": ["@types/node"],
-      "allowedVersions": "22.x"
+      "allowedVersions": "24.x"
     }
   ]
 }

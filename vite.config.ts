@@ -4,7 +4,6 @@ import { reactRouter } from '@react-router/dev/vite';
 import { visualizer } from 'rollup-plugin-visualizer';
 import checker from 'vite-plugin-checker';
 import { VitePWA, type VitePWAOptions } from 'vite-plugin-pwa';
-import tsconfigPaths from 'vite-tsconfig-paths';
 
 const pwaOptions: Partial<VitePWAOptions> = {
   registerType: 'autoUpdate',
@@ -31,6 +30,9 @@ const pwaOptions: Partial<VitePWAOptions> = {
 
 // https://vite.dev/config/
 export default defineConfig({
+  resolve: {
+    tsconfigPaths: true,
+  },
   plugins: [
     reactRouter(),
     checker({
@@ -41,7 +43,6 @@ export default defineConfig({
       //     lintCommand: 'eslint .',
       //   },
     }),
-    tsconfigPaths(),
     VitePWA(pwaOptions),
     visualizer(),
   ],
